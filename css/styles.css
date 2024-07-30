@@ -4,6 +4,14 @@
 
 }
 
+@font-face {
+    font-family: "pirata one";
+    src: url(../fonts/PirataOne-Regular.ttf);
+}
+
+body{
+    font-family: "pirata one", cursive;
+}
 
 h1 {
     color: brown;
