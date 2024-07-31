@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
@@ -9,10 +9,27 @@
     src: url(../fonts/PirataOne-Regular.ttf);
 }
 
-body{
-    font-family: "pirata one", cursive;
+body {
+    font-family: "roboto", sans-serif;
+    background-color: slategray;
 }
 
 h1 {
     color: brown;
+}
+
+
+.cardContain {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 30px;
+
 }
