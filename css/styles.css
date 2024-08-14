@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -14,22 +15,75 @@ body {
     background-color: slategray;
 }
 
+header{
+    background-color: bisque;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
 h1 {
     color: brown;
-}
-
-
-.cardContain {
     display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-
+    justify-content: center;
 }
 
-.card {
+h2 {
+    color: brown;
     display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin: 30px;
+    justify-content: center;
+}
+
+
+.gridContain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
 
 }
+
+.gridItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(154, 125, 180);
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.gridItem:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.lucia{
+    background-image: url(../img/lucia.jpg);
+    background-size: auto;
+    background-position: start;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 600px){
+    .wide{
+        grid-column: span 2;
+    }
+    
+    .tall{
+        grid-row: span 2;
+    }
+}
+
+
+
+
+
+
+
