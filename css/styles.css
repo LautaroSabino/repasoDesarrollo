@@ -12,11 +12,12 @@
 
 body {
     font-family: "roboto", sans-serif;
-    background-color: slategray;
+    background-color: rgb(47, 55, 63);
 }
 
 header{
-    background-color: bisque;
+    background-color: rgb(44, 42, 40);
+    height: 150px;
 }
 
 .nav{
@@ -26,7 +27,7 @@ header{
 }
 
 h1 {
-    color: brown;
+    color: rgb(243, 231, 231);
     display: flex;
     justify-content: center;
 }
@@ -35,16 +36,22 @@ h2 {
     color: brown;
     display: flex;
     justify-content: center;
+    margin: 10px;
+    font-size: xx-large;
 }
 
 
 .gridContain {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
     gap: 20px;
     padding: 20px;
+    margin: 30px;
     grid-auto-flow: dense;
+    font-size: 1rem;
+    font-weight:900;
+    color: aliceblue;
 
 }
 
@@ -56,6 +63,7 @@ h2 {
     background-color: rgb(154, 125, 180);
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
     
 }
 
@@ -66,20 +74,66 @@ h2 {
 
 .lucia{
     background-image: url(../img/lucia.jpg);
-    background-size: auto;
-    background-position: start;
     background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
-@media (min-width: 600px){
-    .wide{
-        grid-column: span 2;
-    }
-    
-    .tall{
-        grid-row: span 2;
-    }
+.martin{
+    background-image: url(../img/Martin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.lila{
+    background-image: url(../img/Lila.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.santi{
+    background-image: url(../img/Santi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ramiro{
+    background-image: url(../img/ramiro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jane{
+    background-image: url(../img/jane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nico{
+    background-image: url(../img/Nico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ragnar{
+    background-image: url(../img/ragnar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bruce{
+    background-image: url(../img/bruce.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.matias{
+    background-image: url(../img/matias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 
